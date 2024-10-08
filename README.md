@@ -3,7 +3,15 @@
 Recuerda instalar las dependencias con 
 `npm install`
 
-¡Atención! Los ejercicios están en diferentes carpetas.
+## Is Adult
+
+Hemos implementado una función que prueba si una persona es mayor de edad o no (mayor de 18 años). 
+
+1. El primer test está hecho
+2. Falta implementar el segundo test, que está preparado
+3. Faltaría un caso interesante en el cual comprobamos que pasa si una persona tiene exactamente 18 años
+
+
 
 
 ## Scoring Words
@@ -23,7 +31,7 @@ high('aa b') --> Valor esperado: 'aa'
 
 Escribe un test cada vez y ejecútalo con: 
 Para ejecutar los tests:
-`npm test`
+`npm run test-scoring-words`
 
 El último test debería fallar. Abre el fichero _scoring-words.js_ y trata de solucionarlo
 
@@ -69,6 +77,8 @@ selectCard(['7♠', '8♦', '9♣'], '10♣'); // Devuelve undefined (la carta n
   4. Adicionalmente, podríamos comprobar el tamaño del array a ver si es el esperado.
 </details>
 
+Para ejecutar los tests:
+`npm run test-poker-cards`
 
 
 <details>

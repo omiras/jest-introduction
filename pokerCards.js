@@ -11,3 +11,4 @@ function selectCard(deck, card) {
     }
     return undefined; // La carta no estaba en la baraja
 }
+

@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test-age-utils": "jest ageUtils",
+    "test-poker-cards": "jest pokerCards",
+    "test-scoring-words": "jest scoring-words",
     "test": "jest"
   },
   "keywords": [],
