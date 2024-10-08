@@ -35,7 +35,7 @@ Para ejecutar los tests:
 
 El último test debería fallar. Abre el fichero _scoring-words.js_ y trata de solucionarlo
 
-## [Difícil] Nueva funcionalidad: Las vocales ganan
+## [Difícil]. Iteración 2B. Nueva funcionalidad: Las vocales ganan
 
 Quieren implementar una nueva funcionalidad. Si una palabra contiene en algún momento *todas las vocales*, esa palabra gana a todas las demás y hay que devolverla inmediatamente
 
@@ -49,12 +49,12 @@ Ejemplo:
 
 ## Poker Cards
 
-Desde la empresa _Poker de Pikachus_ han implementado un juego de cartas de poker. Han implementado la lógica de seleccionar una carta de una baraja de cartas y eliminarla de la misma. Además, tras seleccionar la carta, la baraja debe ser mezclada. Suponemos que *no puede haber* cartas repetidas, y el array de cartas siempre tiene al menos una carta.
+Desde la empresa _Poker de Pikachus_ han creado un juego de cartas de poker. Han implementado la lógica de seleccionar una carta de una baraja de cartas y eliminarla de la misma. Además, tras seleccionar la carta, la baraja debe es mezclada. Suponemos que *no puede haber* cartas repetidas, y el array de cartas siempre tiene al menos una carta.
 
 
 La funcionalidad se encuentra en el fichero _pokerCards.js_ y en principio debería ser correcta. Puedes examinar el código sin problema. Luego debes:
 
-1. Exportar la función que permite seleccionar una carta ()
+1. Exportar la función que permite seleccionar una carta (selectCard)
 2. Escribir los tests necesarios.  Algunos casos de uso posibles son los siguientes, pero puede haber más tests interesantes:
 
 
