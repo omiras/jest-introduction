@@ -5,14 +5,14 @@ Recuerda instalar las dependencias con
 
 ## Is Adult
 
-Hemos implementado una función que prueba si una persona es mayor de edad o no (mayor de 18 años). 
+Hemos implementado una función que prueba si una persona es mayor de edad o no (mayor de 18 años). Abre el archivo _ageUtils.test.js_
 
-1. El primer test está hecho
-2. Falta implementar el segundo test, que está preparado
-3. Faltaría un caso interesante en el cual comprobamos que pasa si una persona tiene exactamente 18 años
+1. El primer test está hecho y comprueba el caso que una persona sea mayor de 18 años holgadamente.
+2. Falta implementar el segundo test, que está preparado, y comprueba si una persona NO es mayor de edad.
+3. Faltaría un caso interesante en el cual comprobamos que pasa si una persona tiene exactamente 18 años. Implementa el test.
 
-
-
+Para ejecutar los tests
+`npm run test-age-utils`
 
 ## Scoring Words
 
