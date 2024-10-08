@@ -41,21 +41,48 @@ Ejemplo:
 
 ## Poker Cards
 
-Desde la empresa _Poker de Pikachus_ han implementado un juego de cartas de poker. Han implementado la lógica de seleccionar una carta de una baraja de cartas y eliminarla de la misma. Además, tras seleccionar la carta, la baraja debe ser mezclada.
+Desde la empresa _Poker de Pikachus_ han implementado un juego de cartas de poker. Han implementado la lógica de seleccionar una carta de una baraja de cartas y eliminarla de la misma. Además, tras seleccionar la carta, la baraja debe ser mezclada. Suponemos que *no puede haber* cartas repetidas, y el array de cartas siempre tiene al menos una carta.
+
 
 La funcionalidad se encuentra en el fichero _pokerCards.js_ y en principio debería ser correcta. Puedes examinar el código sin problema. Luego debes:
 
-1. Exportar la función que permite seleccionar una carta
-2. Escribir los tests necesarios.  Algunos casos de uso posibles son los siguientes
+1. Exportar la función que permite seleccionar una carta ()
+2. Escribir los tests necesarios.  Algunos casos de uso posibles son los siguientes, pero puede haber más tests interesantes:
+
 
 ```
-selectCard(['A♠', '2♠', '3♠', '4♠', '5♠'], '3♠'); // Devuelve '3♠'
-selectCard(['A♥', 'K♦', '10♣', 'J♠'], 'A♥'); // Devuelve 'A♥'
+selectCard(['A♠', '2♠', '3♠', '4♠', '5♠'], '3♠'); // Devuelve '3♠' y lo elimina del array de cartas
+selectCard(['A♥', 'K♦', '10♣', 'J♠'], 'A♥'); // Devuelve 'A♥' y lo elimina del array de cartas
 selectCard(['7♠', '8♦', '9♣'], '10♣'); // Devuelve undefined (la carta no está en la baraja)
 
 ```
 
 3. Piensa que tras seleccionar una carta, _el array de cartas es mazclado aleatoriamente_. Es posible que el método .toBe [no sea suficiente](https://jestjs.io/es-ES/docs/next/expect#tocontainitem) para probar que todo funciona según lo esperado.
+
+<details>
+  <summary>Ayuda 1</summary>
+  Para el <code>selectCard(['A♠', '2♠', '3♠', '4♠', '5♠'], '3♠'); // Devuelve '3♠' y lo elimina del array de cartas` el test debería </code>
+
+  1. Ejecutar la función selectCard y guardar la carta devuelta en una variable
+  2. Comprobar is la carta devuelta es exactamente la carta seleccionada
+  3. Comprobar que la carta seleccionada NO está ya en el array de cartas
+</details>
+
+
+
+<details>
+  <summary>Solución primer test posible</summary>
+  ```javascript
+  test('Selecciona y elimina una carta de la baraja', () => {
+      const deck = ['A♠', '2♠', '3♠', '4♠', '5♠'];
+      const removedCard = selectCard(deck, '3♠');
+  
+      expect(removedCard).toBe('3♠'); // La carta eliminada es '3♠'
+      expect(deck).not.toContain('3♠'); // Verificamos que '3♠' ya no está en la baraja
+  });```
+</details>
+
+
 
 ## Fototeca: Comprobar si una imagen está repetida
 
