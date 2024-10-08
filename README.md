@@ -66,21 +66,14 @@ selectCard(['7♠', '8♦', '9♣'], '10♣'); // Devuelve undefined (la carta n
   1. Ejecutar la función selectCard y guardar la carta devuelta en una variable
   2. Comprobar is la carta devuelta es exactamente la carta seleccionada
   3. Comprobar que la carta seleccionada NO está ya en el array de cartas
+  4. Adicionalmente, podríamos comprobar el tamaño del array a ver si es el esperado.
 </details>
 
 
 
 <details>
   <summary>Solución primer test posible</summary>
-  ```
-  test('Selecciona y elimina una carta de la baraja', () => {
-      const deck = ['A♠', '2♠', '3♠', '4♠', '5♠'];
-      const removedCard = selectCard(deck, '3♠');
-  
-      expect(removedCard).toBe('3♠'); // La carta eliminada es '3♠'
-      expect(deck).not.toContain('3♠'); // Verificamos que '3♠' ya no está en la baraja
-  });
-  ```
+    ![](https://oscarm.tinytake.com/media/16c1727?filename=1728399924905_TinyTake08-10-2024-05-05-30_638639967309794202.png&sub_type=thumbnail_preview&type=attachment&width=797&height=296)
 </details>
 
 
