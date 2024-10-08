@@ -72,14 +72,15 @@ selectCard(['7♠', '8♦', '9♣'], '10♣'); // Devuelve undefined (la carta n
 
 <details>
   <summary>Solución primer test posible</summary>
-  <code>
+  ```
   test('Selecciona y elimina una carta de la baraja', () => {
       const deck = ['A♠', '2♠', '3♠', '4♠', '5♠'];
       const removedCard = selectCard(deck, '3♠');
   
       expect(removedCard).toBe('3♠'); // La carta eliminada es '3♠'
       expect(deck).not.toContain('3♠'); // Verificamos que '3♠' ya no está en la baraja
-  });</code>
+  });
+  ```
 </details>
 
 
