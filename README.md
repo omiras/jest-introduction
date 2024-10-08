@@ -73,7 +73,7 @@ selectCard(['7♠', '8♦', '9♣'], '10♣'); // Devuelve undefined (la carta n
 
 <details>
   <summary>Solución primer test posible</summary>
-    ![](https://oscarm.tinytake.com/media/16c1727?filename=1728399924905_TinyTake08-10-2024-05-05-30_638639967309794202.png&sub_type=thumbnail_preview&type=attachment&width=797&height=296)
+    <img src="https://oscarm.tinytake.com/media/16c1727?filename=1728399924905_TinyTake08-10-2024-05-05-30_638639967309794202.png&sub_type=thumbnail_preview&type=attachment&width=797&height=296"></img>
 </details>
 
 
