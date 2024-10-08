@@ -41,9 +41,9 @@ Ejemplo:
 
 ## Poker Cards
 
-Desde la empresa _Poker de Pikachus_ han implementado una funcionalidad por la vamos a implementar la lógica de seleccionar una carta de una baraja de cartas, eliminarla. Además, tras seleccionar la carta, la baraja debe ser mezclada.
+Desde la empresa _Poker de Pikachus_ han implementado un juego de cartas de poker. Han implementado la lógica de seleccionar una carta de una baraja de cartas y eliminarla de la misma. Además, tras seleccionar la carta, la baraja debe ser mezclada.
 
-La funcionalidad se encuentra en el fichero _pokerCards.js_ y en principio debería ser correcta. 
+La funcionalidad se encuentra en el fichero _pokerCards.js_ y en principio debería ser correcta. Puedes examinar el código sin problema. Luego debes:
 
 1. Exportar la función que permite seleccionar una carta
 2. Escribir los tests necesarios.  Algunos casos de uso posibles son los siguientes
