@@ -25,7 +25,9 @@ function high(x) {
 
     // Recorrer cada palabra (array) para poner comparar cuál tiene más puntos
     for (let w of arrayPhrase) {
-
+        if(w.includes('a') && w.includes('e') && w.includes('i') && w.includes('o') && w.includes('u')){
+            return w
+        }
         //contar los puntos de cada palabra iterando dentro de la misma  
         let pointstWord = 0;
         for (let i of w) {

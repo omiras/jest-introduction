@@ -46,6 +46,7 @@ it('should return a word with all the vowels in case there is one present', () =
 
     const maxPointsWord = high(words);
 
+    // espero que el valor de la variable 'maxPointsWord' sea exactamente "education"
     expect(maxPointsWord).toBe("education");
 })
 
